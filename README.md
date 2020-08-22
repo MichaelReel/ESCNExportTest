@@ -44,9 +44,10 @@ Testing the .escn exporter in blender, trying various capabilities
   1. In the `Object Mode` select the mesh, and holding shift, select the Armature. With both selected click `Ctrl` + `P` to get the parenting menu, then use one of the parenting options to create the vertex groups. The armature becomes the parent object.
      - The vertex groups will be created and visible under the mesh in the `Outliner` panel.
      - If creating empty vertex groups there won't be any auto-linking, vertex groups will need to be populated with vertices manually. In edit mode, select some vertices then click `Ctrl` + `G` to get the vertex grouping menu.
-     - If using the auto-linking functions, the results can be observed in `Edit Mode` with the `Object Data Properties` panel open. Each vertex group can be highlighted and the `Select` and `Deselect` buttons can be used to show hopw the groups have been composed.
-  1. 
+     - If using the auto-linking functions, the results can be observed in `Edit Mode` with the `Object Data Properties` panel open. Each vertex group can be highlighted and the `Select` and `Deselect` buttons can be used to show how the groups have been composed.
+     - Vertices can be added to, or removed from, the *currently active vertex group*. Groups are activated by selecting them from the vertex group menu, or from the `Object Data Properties` panel.
 
+### Creating poses/animations
 
   
 ### Export the scene for use in Godot
