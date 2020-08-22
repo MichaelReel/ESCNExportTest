@@ -31,6 +31,16 @@ Testing the .escn exporter in blender, trying various capabilities
   1. From the `Texture Paint` window, drawing on the mesh should show changes on the `UV Editing` window.
   1. Draw whatever is required to texture the mesh and then change the `Texture Paint` window back to the `Object Mode`.
   1. From the `UV Editing` window, select `Image*` -> `Save` to keep changes to the UV layout texture.
+
+### Creating an armature/bones/skeleton
+
+  1. A good place to start is to put the origin of the mesh at the pivot point between the feet for positioning on terrain so animations have a contact position.
+  1. If finished with the UV/Texture editing, click the `Layout` tab on the main tab bar for more effective use of screen space.
+  1. In `Object Mode`, select from the menu `Add` -> `Armature`
+  1. In the `Object Properties` panel for the armature, open the `Relations` section and set the `Parent` to the mesh object.
+     - The Godot wiki mentions inheriting rotation, scale and location. In Blender 2.8, setting the parent seems to handle this.
+  1. With the armature now connected to the mesh origin, it may need to be rotated or moved. It should probably also be renamed.
+     - Bones can be renamed on the `Outliner` panel.
   
 ### Export the scene for use in Godot
 
