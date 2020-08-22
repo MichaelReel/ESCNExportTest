@@ -37,10 +37,17 @@ Testing the .escn exporter in blender, trying various capabilities
   1. A good place to start is to put the origin of the mesh at the pivot point between the feet for positioning on terrain so animations have a contact position.
   1. If finished with the UV/Texture editing, click the `Layout` tab on the main tab bar for more effective use of screen space.
   1. In `Object Mode`, select from the menu `Add` -> `Armature`
-  1. In the `Object Properties` panel for the armature, open the `Relations` section and set the `Parent` to the mesh object.
-     - The Godot wiki mentions inheriting rotation, scale and location. In Blender 2.8, setting the parent seems to handle this.
-  1. With the armature now connected to the mesh origin, it may need to be rotated or moved. It should probably also be renamed.
+  1. With the armature created it should probably also be renamed.
      - Bones can be renamed on the `Outliner` panel.
+  1. In `Edit Mode` and with the first bone of the armature selected, `Shift` + `E` will add a new bone attached to the last.
+  1. Draw all the bones in relation to the structure of the model
+  1. In the `Object Mode` select the mesh, and holding shift, select the Armature. With both selected click `Ctrl` + `P` to get the parenting menu, then use one of the parenting options to create the vertex groups. The armature becomes the parent object.
+     - The vertex groups will be created and visible under the mesh in the `Outliner` panel.
+     - If creating empty vertex groups there won't be any auto-linking, vertex groups will need to be populated with vertices manually. In edit mode, select some vertices then click `Ctrl` + `G` to get the vertex grouping menu.
+     - If using the auto-linking functions, the results can be observed in `Edit Mode` with the `Object Data Properties` panel open. Each vertex group can be highlighted and the `Select` and `Deselect` buttons can be used to show hopw the groups have been composed.
+  1. 
+
+
   
 ### Export the scene for use in Godot
 
