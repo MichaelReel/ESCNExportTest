@@ -30,6 +30,7 @@ Testing the .escn exporter in blender, trying various capabilities
   1. Change the `Object Mode` window to `Texture Paint`, this should show the edges in black on the mesh from the UV layout image.
   1. From the `Texture Paint` window, drawing on the mesh should show changes on the `UV Editing` window.
   1. Draw whatever is required to texture the mesh and then change the `Texture Paint` window back to the `Object Mode`.
+  1. From the `UV Editing` window, select `Image*` -> `Save` to keep changes to the UV layout texture.
   
 ### Export the scene for use in Godot
 
