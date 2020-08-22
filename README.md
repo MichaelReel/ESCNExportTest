@@ -24,6 +24,7 @@ Testing the .escn exporter in blender, trying various capabilities
      - This should show an image that lines up with the UV layout, it might be difficult to see without zooming in to check.
   1. Change the `Edit Mode` window the the `Object Mode`, the mesh should still be selected.
   1. On the object `Properties` panel (might need to enable this view) open the `Material Properties` tab.
+  1. If there is no material on this mesh, then click the `+` `New` button.
   1. Click the button to the right of the `Base Color` field, and select the `Image Texture` option from the `Texture` column.
   1. An `Open` button should have appeared, click this and select the UV layout image created earlier.
   1. Change the `Object Mode` window to `Texture Paint`, this should show the edges in black on the mesh from the UV layout image.
