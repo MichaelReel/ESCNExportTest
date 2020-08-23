@@ -47,8 +47,29 @@ Testing the .escn exporter in blender, trying various capabilities
      - If using the auto-linking functions, the results can be observed in `Edit Mode` with the `Object Data Properties` panel open. Each vertex group can be highlighted and the `Select` and `Deselect` buttons can be used to show how the groups have been composed.
      - Vertices can be added to, or removed from, the *currently active vertex group*. Groups are activated by selecting them from the vertex group menu, or from the `Object Data Properties` panel.
 
-### Creating poses/animations
+### Creating poses
 
+*N.B.: Poses don't appear to be directly usable in Godot.*
+
+  1. Change the `Object Mode` (or `Edit Mode`) to `Pose Mode`
+  1. Manipulate the armature, and the vertices of the mesh should deform along with the bones.
+  1. On the `Outliner` panel, select the Armature object.
+  1. On the  `Object Data Properties` panel, open the `Pose Library` section and click `+` `New`.
+     - The name of the Pose Library can be edited in the newly created title bar.
+  1. Clicking the `+` button on the left should save the current pose to the Pose Library.
+     - Make sure the whole armature is selected in the `Outliner` panel before adding the pose.
+     - The name of the pose can be edited.
+
+### Creating animations using poses
+
+*N.B.: Sadly, as of the moment, the current ESCN exporter doesn't export animations correctly :frowning:
+
+  1. Make a couple of keyframe poses using the process above, select a starting pose.
+  1. Click the `Animation` tab from the main bar at the top.
+  1. On the `Dope Sheet` window at the bottom, 
+  1. Animation key frames need to be created with the armature selected and the `Pose Mode` open.
+  1. Setup a pose, then press I to add a key frame, choose the rotation, or location and rotation.
+  1. Move time line, use different pose, with all the bones selected, press I to add another rotation key frame.
   
 ### Export the scene for use in Godot
 
