@@ -62,7 +62,7 @@ Testing the .escn exporter in blender, trying various capabilities
 
 ### Creating animations using poses
 
-*N.B.: Sadly, as of the moment, the current ESCN exporter doesn't export animations correctly :frowning:
+*N.B.: Sadly, as of the moment, the current ESCN exporter doesn't export animations correctly :frowning:*
 
   1. Make a couple of keyframe poses using the process above, select a starting pose.
   1. Click the `Animation` tab from the main bar at the top.
